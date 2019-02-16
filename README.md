@@ -1,5 +1,5 @@
 
-# About this project
+# Setup Process
 
 [More Info](https://github.com/Microsoft/windows-dev-box-setup-scripts)
 
