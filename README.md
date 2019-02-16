@@ -28,3 +28,15 @@ The  Chocolatey client will not allow you to magically install software that req
 
 ## Random command
 Restart-Service LxssManager
+
+
+## zshrc
+refined theme
+eval "`dircolors -b ~/.dircolors`"
+export DOCKER_HOST=tcp://0.0.0.0:2375
+autoload -U promptinit; promptinit
+alias idea="/mnt/c/Users/.../AppData/Local/JetBrains/Toolbox/apps/IDEA-U/ch-0/183.5429.30/bin/idea64.exe"
+
+## dircolors
+
+
