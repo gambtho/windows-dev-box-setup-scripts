@@ -32,20 +32,15 @@ Before you begin, please read the [Legal](#Legal) section.
 
 To run a recipe script, click a link in the table below from your target machine. This will download the Boxstarter one-click application, and prompt you for Boxstarter to run with Administrator privileges (which it needs to do its job). Clicking yes in this dialog will cause the recipe to begin. You can then leave the job unattended and come back when it's finished.
 
+
+My version 
+
+
+
 |Click link to run  |Description  |
 |---------|---------|
-|<a href='http://boxstarter.org/package/url?https://raw.githubusercontent.com/Microsoft/windows-dev-box-setup-scripts/master/dev_app.ps1'>Full Desktop App</a>     | Windows Desktop App Development (Visual Studio, Windows SDK, C++, UWP, .NET (WPF and Winforms)) |
-|<a href='http://boxstarter.org/package/url?https://raw.githubusercontent.com/Microsoft/windows-dev-box-setup-scripts/master/dev_app_desktop_uwp.ps1'>UWP Desktop App</a>     | Windows Desktop App Development (Visual Studio, Windows SDK, UWP) |
-|<a href='http://boxstarter.org/package/url?https://raw.githubusercontent.com/Microsoft/windows-dev-box-setup-scripts/master/dev_app_desktop_.NET.ps1'>.NET Desktop App</a>     | Windows Desktop App Development (Visual Studio, Windows SDK, .NET (WPF and Winforms)) |
-|<a href='http://boxstarter.org/package/url?https://raw.githubusercontent.com/Microsoft/windows-dev-box-setup-scripts/master/dev_app_desktop_cplusplus.ps1'>C++ Desktop App</a>     | Windows Desktop App Development (Visual Studio, Windows SDK, C++) |
-|<a href='http://boxstarter.org/package/url?https://raw.githubusercontent.com/Microsoft/windows-dev-box-setup-scripts/master/dev_web.ps1'>Web</a> | Web (VS Code, WSL, Multiple Browsers)        |
-|<a href='http://boxstarter.org/package/url?https://raw.githubusercontent.com/Microsoft/windows-dev-box-setup-scripts/master/dev_web_nodejs.ps1'>Web NodeJS</a>     | Web Dev with NodeJS (Web + NodeJS LTS)¹        |
-|<a href='http://boxstarter.org/package/url?https://raw.githubusercontent.com/Microsoft/windows-dev-box-setup-scripts/master/dev_ml_windows.ps1'>Machine Learning Windows</a>| Machine Learning with only Windows native tools        |
-|<a href='http://boxstarter.org/package/url?https://raw.githubusercontent.com/Microsoft/windows-dev-box-setup-scripts/master/dev_ml_wsl.ps1'>Machine Learning Linux</a>| Machine Learning with Linux tools running on WSL        |
-|<a href='http://boxstarter.org/package/url?https://raw.githubusercontent.com/Microsoft/windows-dev-box-setup-scripts/master/devops_azure.ps1'>DevOps Azure</a>| Client setup for DevOps with Azure      |
-|     | Xamarin (Visual Studio, Xamarin, Android SDK) |
-|     | Containers (Docker, Kubernetes, etc...)        |
-|     | Submit a PR with a recommended configuration!        |
+|<a href='http://boxstarter.org/package/url?https://raw.githubusercontent.com/gambtho/windows-dev-box-setup-scripts/master/full_stack.ps1'>Full Desktop App</a>     | Full Stack Dev (Windows and Linux Native Tools) |
+
 
 **Notes:**  
 1. If you are using WSL there's a followup step we recommend after running the setup script.  When the script finishes you will only have a root user with a blank password. You should  manually create a non-root user via `$ sudo adduser [USERNAME] sudo` 
