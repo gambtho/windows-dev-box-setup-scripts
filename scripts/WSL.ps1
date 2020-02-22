@@ -11,20 +11,10 @@ Ubuntu1804 install --root
 Ubuntu1804 run apt update
 Ubuntu1804 run apt upgrade -y
 
-<#
-NOTE: Other distros can be scripted the same way for example:
-
-#--- SLES ---
-# Install SLES Store app
-Invoke-WebRequest -Uri https://aka.ms/wsl-sles-12 -OutFile ~/SLES.appx -UseBasicParsing
-Add-AppxPackage -Path ~/SLES.appx
-# Launch SLES
-sles-12.exe
-
-# --- openSUSE ---
-Invoke-WebRequest -Uri https://aka.ms/wsl-opensuse-42 -OutFile ~/openSUSE.appx -UseBasicParsing
-Add-AppxPackage -Path ~/openSUSE.appx
-# Launch openSUSE
-opensuse-42.exe
-#>
-
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+RefreshEnv
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+RefreshEnv
+wsl --set-version Ubuntu1804 2
+wsl --set-default-version 2
+RefreshEnv

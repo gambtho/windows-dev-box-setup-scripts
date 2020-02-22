@@ -27,27 +27,25 @@ executeScript "FileExplorerSettings.ps1";
 executeScript "RemoveDefaultApps.ps1";
 executeScript "CommonDevTools.ps1";
 executeScript "HyperV.ps1";
+RefreshEnv
+
 executeScript "Docker.ps1";
+RefreshEnv
+
 executeScript "Browsers.ps1";
+RefreshEnv
+
 executeScript "WSL.ps1";
+RefreshEnv
 
-choco install -y adobereader
-choco install -y dropbox
-choco install -y evernote
-choco install -y Ghostscript
-choco install -y Ghostscript.app
-# choco install -y jetbrainstoolbox 
-choco install -y miniconda3 
+executeScript "Personal.ps1";
+RefreshEnv
 
-# Install python
-choco install -y python --version=3.5.4
-refreshenv
-python -m pip install --upgrade pip
 
 write-host "Installing tools inside the WSL distro..."
-Ubuntu1804 apt-transport-https lsb-release ca-certificates build-essential curl wget unzip zip tmux git gcc g++ make nodejs -y
-Ubuntu1804 run apt install python2.7 python3 -y 
-Ubuntu1804 yarn docker-ce fonts-powerline ttf-mscorefonts-installer openjdk-11-jre-headless neovim zsh screenfetch python-pyqt5 msttcorefonts -y
+# Ubuntu1804 apt-transport-https lsb-release ca-certificates build-essential curl wget unzip zip tmux git gcc g++ make nodejs -y
+# Ubuntu1804 run apt install python2.7 python3 -y 
+# Ubuntu1804 yarn docker-ce fonts-powerline ttf-mscorefonts-installer openjdk-11-jre-headless neovim zsh screenfetch python-pyqt5 msttcorefonts -y
 
 write-host "Finished installing tools inside the WSL distro"
 
